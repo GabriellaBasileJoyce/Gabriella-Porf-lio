@@ -16,9 +16,9 @@ Inglês e Português fluentes
 Criar, experimentar, errar e aprender no caminho. Transformar ideias em projetos que contam histórias.
 
 ## Projetos em destaque  
--  **[Análise de Dados de E-commerce](https://www.canva.com/design/DAGvw6fw3o4/0q0ZgBqOIXsFZF5x92H6NA/edit)** – insights estratégicos para melhorar a conversão  
--  **[Modelo de Machine Learning para Marketing](link_projeto)** – previsão de comportamento do cliente  
--  **[Conteúdo Criativo para Redes Sociais](link_projeto)** – produção e edição de vídeos  
+-  **[Sonnata - Concorente da Livraria da Vila](https://www.canva.com/design/DAGvw6fw3o4/0q0ZgBqOIXsFZF5x92H6NA/edit)**  
+-  **[Campanha baseado em análise de dados](https://www.canva.com/design/DAGwI1THZ-M/pHdmCCm-d9L8jwBum_1sFw/edit)** –  
+-  **[Chiquinho Estratégia e Modelo de Négocio](https://www.canva.com/design/DAGmk6KZ-x4/Jhu7VZBGp1LZ2wrEzN8WQQ/edit)** –
 
 ---
 
