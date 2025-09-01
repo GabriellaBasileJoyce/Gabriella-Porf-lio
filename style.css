@@ -12,12 +12,22 @@ body {
   line-height: 1.6;
 }
 
+/* Seções com cores alternadas */
+.section-white {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+
+.section-gray {
+  background-color: #f8f8f8;
+  padding: 60px 0;
+}
+
 /* Container centralizado */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 0;
 }
 
 /* Header */
@@ -47,6 +57,8 @@ section h2 {
   border-bottom: 2px solid #cccccc;
   display: inline-block;
   padding-bottom: 5px;
+  text-align: center;
+  width: 100%;
 }
 
 section h3 {
@@ -72,7 +84,7 @@ ul li::before {
   font-weight: bold;
 }
 
-/* Grid de projetos horizontal */
+/* Grid horizontal de projetos */
 .grid-projetos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -80,21 +92,21 @@ ul li::before {
 }
 
 .card-projeto {
-  background-color: #f8f8f8;
+  background-color: #ffffff;
   border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 25px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-projeto:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
 .card-projeto h3 {
-  font-size: 1.3em;
-  margin-bottom: 10px;
+  font-size: 1.4em;
+  margin-bottom: 12px;
 }
 
 .card-projeto p {
@@ -106,7 +118,7 @@ ul li::before {
   display: inline-block;
   background-color: #111111;
   color: #ffffff;
-  padding: 8px 15px;
+  padding: 10px 18px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
@@ -115,6 +127,17 @@ ul li::before {
 
 .card-projeto a:hover {
   background-color: #555555;
+}
+
+/* Grid colunas para pontos fortes e ferramentas */
+.grid-colunas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.coluna ul li {
+  margin-bottom: 10px;
 }
 
 /* Links de contato */
@@ -130,5 +153,32 @@ ul li::before {
 }
 
 /* Responsividade */
-@
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.8em;
+  }
+
+  section h2 {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2.2em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  section h2 {
+    font-size: 1.5em;
+  }
+
+  .card-projeto {
+    padding: 15px;
+  }
+}
+
 
