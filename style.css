@@ -6,9 +6,9 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #fff;
-  color: #111;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff; /* branco */
+  color: #111111; /* preto */
   line-height: 1.6;
 }
 
@@ -22,99 +22,136 @@ body {
 
 /* Header */
 header {
-  background-color: #111; /* preto */
-  color: #fff; /* branco */
-  padding: 80px 0;
+  background-color: #111111; /* preto */
+  color: #ffffff; /* branco */
+  padding: 100px 20px;
   text-align: center;
 }
 
 header h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
+  font-size: 3.5em;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
 }
 
 header p {
   font-size: 1.2em;
-  color: #ccc; /* cinza */
+  color: #cccccc; /* cinza claro */
 }
 
 /* Seções */
 section h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: #111;
-  border-bottom: 2px solid #ccc; /* cinza */
+  font-size: 2.2em;
+  margin-bottom: 25px;
+  color: #111111;
+  border-bottom: 2px solid #cccccc; /* cinza */
   display: inline-block;
   padding-bottom: 5px;
 }
 
-section p, section li {
-  font-size: 1em;
-  color: #333;
-  margin-bottom: 10px;
+section h3 {
+  font-size: 1.4em;
+  margin-top: 15px;
+  color: #111111;
 }
 
-/* Projetos em grid */
+section p, section li {
+  font-size: 1em;
+  color: #333333; /* cinza escuro */
+  margin-bottom: 12px;
+}
+
+/* Lista de pontos fortes e ferramentas */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li::before {
+  content: "• ";
+  color: #111111;
+  font-weight: bold;
+}
+
+/* Grid de projetos */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
 
-.projeto img {
-  width: 100%;
-  border-radius: 10px;
-  border: 1px solid #ccc; /* cinza */
-  transition: transform 0.3s ease;
+.projeto {
+  background-color: #f8f8f8; /* cinza claro */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.projeto img:hover {
-  transform: scale(1.05);
+.projeto img {
+  width: 100%;
+  display: block;
+}
+
+.projeto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
 .projeto h3 {
-  margin: 10px 0 5px;
+  margin: 15px;
   font-size: 1.2em;
-  color: #111;
+  color: #111111;
 }
 
 .projeto p {
+  margin: 0 15px 15px 15px;
   font-size: 0.95em;
-  color: #555;
-}
-
-/* Ferramentas */
-#ferramentas ul {
-  list-style-type: none;
-}
-
-#ferramentas li::before {
-  content: "• ";
-  color: #111;
+  color: #555555;
 }
 
 /* Links de contato */
 #contato a {
-  color: #111;
+  color: #111111;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 #contato a:hover {
-  color: #555; /* cinza escuro */
+  color: #555555; /* cinza escuro */
 }
 
-/* Responsividade para telas menores */
-@media (max-width: 600px) {
+/* Responsividade */
+@media (max-width: 768px) {
   header h1 {
-    font-size: 2em;
+    font-size: 2.8em;
+  }
+
+  section h2 {
+    font-size: 1.8em;
+  }
+
+  .projeto {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2.2em;
+  }
+
+  header p {
+    font-size: 1em;
   }
 
   section h2 {
     font-size: 1.5em;
   }
 
-  .projeto img {
-    width: 100%;
+  section h3 {
+    font-size: 1.2em;
   }
 }
+
